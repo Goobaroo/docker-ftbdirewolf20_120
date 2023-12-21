@@ -21,7 +21,7 @@ fi
 
 if ! [[ -f serverinstall_${ID}_${VER} ]]; then
   rm -f serverinstall_${ID}* forge-*.jar run.sh start.sh
-  curl -Lo serverinstall_${ID}_${VER} https://api.modpacks.ch/public/modpack/${ID}/${VER}/server/linux
+  curl -Lo serverinstall_${ID}_${VER} https://api.modpacks.ch/public/modpack/${ID}/${VER}/server/arm/mac
   chmod +x serverinstall_${ID}_${VER}
    ./serverinstall_${ID}_${VER} --path /data --nojava
 fi
